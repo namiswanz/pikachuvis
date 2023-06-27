@@ -28,7 +28,7 @@ import sys
 import re
 import os
 # import pycurl
-# By... heArt🖤
+# By... ARMANDO SALAZAR🖤
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
     'Accept-Language': 'en-US,en;q=0.9',
@@ -78,7 +78,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
 
-    editable = await m.reply_text("**Hellow deAr,** i am here for multipurpose & in **under construction.**\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\n**All running commands are:-**\n\n/txt\n/adda_pdf\n/jw\n/heArt\n/top\n/cw\n/pw\n\n**BOT IS IN  UNDERCONSTRUCTION.**\n")
+    editable = await m.reply_text("**Hellow deAr,** i am here for multipurpose & in **under construction.**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\n**All running commands are:-**\n\n/txt\n/adda_pdf\n/jw\n/ARMANDO SALAZAR\n/top\n/cw\n/pw\n\n**BOT IS IN  UNDERCONSTRUCTION.**\n")
 
 
 @bot.on_message(filters.command(["cancel"]) & (filters.chat(sudo_groups)))
@@ -99,7 +99,7 @@ async def restart_handler(_, m):
 @bot.on_message(filters.command(["txt"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
 
-    editable = await m.reply_text(" **Hello DeAr,** I am Text Downloader Bot.\nI can download videos from text file one by one.\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File**\n")
+    editable = await m.reply_text(" **Hello DeAr,** I am Text Downloader Bot.\nI can download videos from text file one by one.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File**\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -412,7 +412,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["top"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Hello DeAr,** I am **TopRankers Downloader Bot.**\nI can download videos from text file one by one.\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File.**")
+    editable = await m.reply_text(f"**Hello DeAr,** I am **TopRankers Downloader Bot.**\nI can download videos from text file one by one.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -541,7 +541,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["adda_pdf"]))
 async def adda_pdf(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Hi im Pdf Adda pdf dl**\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\nNow send your file to download **ADDA PDFs**\n")
+    editable = await m.reply_text(f"**Hi im Pdf Adda pdf dl**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow send your file to download **ADDA PDFs**\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -606,7 +606,7 @@ async def adda_pdf(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["jw"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hellow deAr,**\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\n**Send txt file:-**")
+    editable = await m.reply_text("**Hellow deAr,**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\n**Send txt file:-**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -769,7 +769,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-@bot.on_message(filters.command(["heArt"]))
+@bot.on_message(filters.command(["ARMANDO SALAZAR"]))
 async def start(bot, update):
       await update.reply_text("Hi i am **Careerwill Downloader**.\n\n"
                                "**NOW:-** "
@@ -797,7 +797,7 @@ info= {
 @bot.on_message(filters.command(["cw"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-        "**Hello DeAr,** I am **Careerwill Downloader Bot.**\nI can download videos of Careerwill App.\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\nSend **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**\n\n**BOT IS IN UNDERCONSTRUCTION.**"
+        "**Hello DeAr,** I am **Careerwill Downloader Bot.**\nI can download videos of Careerwill App.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nSend **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**\n\n**BOT IS IN UNDERCONSTRUCTION.**"
     )
 
     input1: Message = await bot.listen(editable.chat.id)
@@ -1102,7 +1102,7 @@ bot.run()
 
 
 
-@bot.on_message(filters.command(["heArt"]))
+@bot.on_message(filters.command(["ARMANDO SALAZAR"]))
 async def start(bot, update):
        await update.reply_text("Hi i am **physics Downloader**.\n\n"
                               "**NOW:-** "
@@ -1112,7 +1112,7 @@ async def start(bot, update):
 @bot.on_message(filters.command(["pw"]))
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-        "**Hello deAr,** i am **Physics Wallah** downloader bot.\n\n**Developer:** HeArt🖤 \n**Language:**🔥Python\n\nNow send your **Mobile number.**\n\n**BOT IS UNDER CONSTRUCTION.**\n"
+        "**Hello deAr,** i am **Physics Wallah** downloader bot.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow send your **Mobile number.**\n\n**BOT IS UNDER CONSTRUCTION.**\n"
     )  
     input1: Message = await bot.listen(editable.chat.id)
     raw_text1=str(input1.text)
