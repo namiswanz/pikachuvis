@@ -352,17 +352,17 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ From Admins**"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ From ARMANDO SALAZAR**"
                 prog = await m.reply_text(Show)
-                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:** Respected Admins❤️'
-                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected Admins❤️'
+                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:** Respected ARMANDO SALAZAR❤️'
+                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected ARMANDO SALAZAR❤️'
 #                 if cmd == "pdf" or "drive" in url:
 #                     try:
 #                         ka=await helper.download(url,name)
 #                         await prog.delete (True)
 #                         time.sleep(1)
 #                         # await helper.send_doc(bot,m,cc,ka,cc1,prog,count,name)
-#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ From Admins.**")
+#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ From ARMANDO SALAZAR.**")
 #                         time.sleep(1)
 #                         start_time = time.time()
 #                         await m.reply_document(ka,caption=cc1)
@@ -380,10 +380,10 @@ async def account_login(bot: Client, m: Message):
                         ka = await helper.aio(url, name)
                         await prog.delete(True)
                         time.sleep(1)
-                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From Admins.**")
+                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From ARMANDO SALAZAR.**")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected Admins❤️')
+                        await m.reply_document(ka, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected ARMANDO SALAZAR❤️')
                         count += 1
                         # time.sleep(1)
                         await reply.delete(True)
@@ -402,7 +402,7 @@ async def account_login(bot: Client, m: Message):
                     time.sleep(1)
 
             except Exception as e:
-                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ From Admins**")
+                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ From ARMANDO SALAZAR**")
                 continue
 
     except Exception as e:
@@ -500,7 +500,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected Admins❤️**'
+            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected ARMANDO SALAZAR❤️**'
 
             cmd = f'yt-dlp -o "{name}.mp4" --cookies {cook} "{url}"'
             try:
@@ -510,7 +510,7 @@ async def account_login(bot: Client, m: Message):
                 subprocess.run(
                     f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
                 await prog.delete(True)
-                reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From Admins**")
+                reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From ARMANDO SALAZAR**")
                 try:
                     if thumb == "no":
                         thumbnail = f"{filename}.jpg"
@@ -962,8 +962,8 @@ async def account_login(bot: Client, m: Message):
                     #input4 = message = await bot.listen(editable.chat.id)
                     #raw_text4 = input4.text
 
-                    cc = f"**{count}) Title :** {lessonName}\n\n**Quality :** {raw_text4}\n**Batch :** {mm}\n\n**Download by:** Respected Admins.❤️\n"
-                    Show = f"**Downloading:-**\n**Title -** ```{lessonName}\n\nQuality - {raw_text4}\n\n**With ❤️ From Admins.**\n"
+                    cc = f"**{count}) Title :** {lessonName}\n\n**Quality :** {raw_text4}\n**Batch :** {mm}\n\n**Download by:** Respected ARMANDO SALAZAR.❤️\n"
+                    Show = f"**Downloading:-**\n**Title -** ```{lessonName}\n\nQuality - {raw_text4}\n\n**With ❤️ From ARMANDO SALAZAR.**\n"
                     prog = await m.reply_text(Show)
 
                     if "youtu" in link:
@@ -1049,8 +1049,8 @@ async def account_login(bot: Client, m: Message):
                     xi =(data["publishedAt"])
                  
                     
-                    ww = f"**{count1}) File Name :- **{name}\n**Date : **{xi}\n{bn}\n\n**With ❤️ From Admins.**\n"
-                    show2 = f'**Downloading :-**\n\n**Link :** ```{s}```\n\n**With ❤️ From Admins.**\n'
+                    ww = f"**{count1}) File Name :- **{name}\n**Date : **{xi}\n{bn}\n\n**With ❤️ From ARMANDO SALAZAR.**\n"
+                    show2 = f'**Downloading :-**\n\n**Link :** ```{s}```\n\n**With ❤️ From ARMANDO SALAZAR.**\n'
                     prog2 = await m.reply_text(show2)
                     cmd2=f'yt-dlp -o "{name}.pdf" "{s}"'
                     try:
