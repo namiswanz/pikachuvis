@@ -28,7 +28,7 @@ import sys
 import re
 import os
 # import pycurl
-# By... ARMANDO SALAZAR🖤
+# By... GROUP ADMINS🖤
 headers = {
     'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9',
     'Accept-Language': 'en-US,en;q=0.9',
@@ -78,7 +78,7 @@ bot = Client(
 @bot.on_message(filters.command(["start"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
 
-    editable = await m.reply_text("**Hellow deAr,** i am here for multipurpose & in **under construction.**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\n**All running commands are:-**\n\n/txt\n/adda_pdf\n/jw\n/ARMANDO SALAZAR\n/top\n/cw\n/pw\n\n**BOT IS IN  UNDERCONSTRUCTION.**\n")
+    editable = await m.reply_text("**Hellow deAr,** i am here for multipurpose & in **under construction.**\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\n**All running commands are:-**\n\n/txt\n/adda_pdf\n/jw\n/GROUP ADMINS\n/top\n/cw\n/pw\n\n**BOT IS IN  UNDERCONSTRUCTION.**\n")
 
 
 @bot.on_message(filters.command(["cancel"]) & (filters.chat(sudo_groups)))
@@ -99,7 +99,7 @@ async def restart_handler(_, m):
 @bot.on_message(filters.command(["txt"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
 
-    editable = await m.reply_text(" **Hello DeAr,** I am Text Downloader Bot.\nI can download videos from text file one by one.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File**\n")
+    editable = await m.reply_text(" **Hello DeAr,** I am Text Downloader Bot.\nI can download videos from text file one by one.\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File**\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -352,17 +352,17 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ From ARMANDO SALAZAR**"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ From GROUP ADMINS**"
                 prog = await m.reply_text(Show)
-                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:** Respected ARMANDO SALAZAR❤️'
-                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected ARMANDO SALAZAR❤️'
+                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:** Respected GROUP ADMINS❤️'
+                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected GROUP ADMINS❤️'
 #                 if cmd == "pdf" or "drive" in url:
 #                     try:
 #                         ka=await helper.download(url,name)
 #                         await prog.delete (True)
 #                         time.sleep(1)
 #                         # await helper.send_doc(bot,m,cc,ka,cc1,prog,count,name)
-#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ From ARMANDO SALAZAR.**")
+#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ From GROUP ADMINS.**")
 #                         time.sleep(1)
 #                         start_time = time.time()
 #                         await m.reply_document(ka,caption=cc1)
@@ -380,10 +380,10 @@ async def account_login(bot: Client, m: Message):
                         ka = await helper.aio(url, name)
                         await prog.delete(True)
                         time.sleep(1)
-                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From ARMANDO SALAZAR.**")
+                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From GROUP ADMINS.**")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected ARMANDO SALAZAR❤️')
+                        await m.reply_document(ka, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected GROUP ADMINS❤️')
                         count += 1
                         # time.sleep(1)
                         await reply.delete(True)
@@ -402,7 +402,7 @@ async def account_login(bot: Client, m: Message):
                     time.sleep(1)
 
             except Exception as e:
-                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ From ARMANDO SALAZAR**")
+                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ From GROUP ADMINS**")
                 continue
 
     except Exception as e:
@@ -412,7 +412,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["top"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Hello DeAr,** I am **TopRankers Downloader Bot.**\nI can download videos from text file one by one.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File.**")
+    editable = await m.reply_text(f"**Hello DeAr,** I am **TopRankers Downloader Bot.**\nI can download videos from text file one by one.\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\nNow Send Your **TXT File.**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -500,7 +500,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected ARMANDO SALAZAR❤️**'
+            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected GROUP ADMINS❤️**'
 
             cmd = f'yt-dlp -o "{name}.mp4" --cookies {cook} "{url}"'
             try:
@@ -510,7 +510,7 @@ async def account_login(bot: Client, m: Message):
                 subprocess.run(
                     f'ffmpeg -i "{filename}" -ss 00:01:00 -vframes 1 "{filename}.jpg"', shell=True)
                 await prog.delete(True)
-                reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From ARMANDO SALAZAR**")
+                reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From GROUP ADMINS**")
                 try:
                     if thumb == "no":
                         thumbnail = f"{filename}.jpg"
@@ -541,7 +541,7 @@ async def account_login(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["adda_pdf"]))
 async def adda_pdf(bot: Client, m: Message):
-    editable = await m.reply_text(f"**Hi im Pdf Adda pdf dl**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nNow send your file to download **ADDA PDFs**\n")
+    editable = await m.reply_text(f"**Hi im Pdf Adda pdf dl**\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\nNow send your file to download **ADDA PDFs**\n")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -606,7 +606,7 @@ async def adda_pdf(bot: Client, m: Message):
 
 @bot.on_message(filters.command(["jw"]) & (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
-    editable = await m.reply_text("**Hellow deAr,**\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\n**Send txt file:-**")
+    editable = await m.reply_text("**Hellow deAr,**\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\n**Send txt file:-**")
     input: Message = await bot.listen(editable.chat.id)
     x = await input.download()
     await input.delete(True)
@@ -769,7 +769,7 @@ async def account_login(bot: Client, m: Message):
 
 
 
-@bot.on_message(filters.command(["ARMANDO SALAZAR"]))
+@bot.on_message(filters.command(["GROUP ADMINS"]))
 async def start(bot, update):
       await update.reply_text("Hi i am **Careerwill Downloader**.\n\n"
                                "**NOW:-** "
@@ -797,7 +797,7 @@ info= {
 @bot.on_message(filters.command(["cw"])& ~filters.edited)
 async def account_login(bot: Client, m: Message):
     editable = await m.reply_text(
-        "**Hello DeAr,** I am **Careerwill Downloader Bot.**\nI can download videos of Careerwill App.\n\n**Developer:** ARMANDO SALAZAR🖤 \n**Language:**🔥Python\n\nSend **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**\n\n**BOT IS IN UNDERCONSTRUCTION.**"
+        "**Hello DeAr,** I am **Careerwill Downloader Bot.**\nI can download videos of Careerwill App.\n\n**Developer:** GROUP ADMINS🖤 \n**Language:**🔥Python\n\nSend **ID & Password** in this manner otherwise bot will not respond.\n\nSend like this:-  **ID*Password**\n\n**BOT IS IN UNDERCONSTRUCTION.**"
     )
 
     input1: Message = await bot.listen(editable.chat.id)
@@ -962,8 +962,8 @@ async def account_login(bot: Client, m: Message):
                     #input4 = message = await bot.listen(editable.chat.id)
                     #raw_text4 = input4.text
 
-                    cc = f"**{count}) Title :** {lessonName}\n\n**Quality :** {raw_text4}\n**Batch :** {mm}\n\n**Download by:** Respected ARMANDO SALAZAR.❤️\n"
-                    Show = f"**Downloading:-**\n**Title -** ```{lessonName}\n\nQuality - {raw_text4}\n\n**With ❤️ From ARMANDO SALAZAR.**\n"
+                    cc = f"**{count}) Title :** {lessonName}\n\n**Quality :** {raw_text4}\n**Batch :** {mm}\n\n**Download by:** Respected GROUP ADMINS.❤️\n"
+                    Show = f"**Downloading:-**\n**Title -** ```{lessonName}\n\nQuality - {raw_text4}\n\n**With ❤️ From GROUP ADMINS.**\n"
                     prog = await m.reply_text(Show)
 
                     if "youtu" in link:
@@ -1049,8 +1049,8 @@ async def account_login(bot: Client, m: Message):
                     xi =(data["publishedAt"])
                  
                     
-                    ww = f"**{count1}) File Name :- **{name}\n**Date : **{xi}\n{bn}\n\n**With ❤️ From ARMANDO SALAZAR.**\n"
-                    show2 = f'**Downloading :-**\n\n**Link :** ```{s}```\n\n**With ❤️ From ARMANDO SALAZAR.**\n'
+                    ww = f"**{count1}) File Name :- **{name}\n**Date : **{xi}\n{bn}\n\n**With ❤️ From GROUP ADMINS.**\n"
+                    show2 = f'**Downloading :-**\n\n**Link :** ```{s}```\n\n**With ❤️ From GROUP ADMINS.**\n'
                     prog2 = await m.reply_text(show2)
                     cmd2=f'yt-dlp -o "{name}.pdf" "{s}"'
                     try:
