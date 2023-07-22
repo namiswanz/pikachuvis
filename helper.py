@@ -156,6 +156,7 @@ async def download_video(url,cmd, name):
         if os.path.isfile(f"{name}.mkv"):
             return f"{name}.mkv"
         elif os.path.isfile(f"{name}.mp4"):
+            print("proce.os")
             return f"{name}.mp4"
         elif os.path.isfile(f"{name}.mp4.webm"):
             return f"{name}.mp4.webm"
@@ -177,7 +178,7 @@ async def send_doc(bot: Client, m: Message,cc,ka,cc1,prog,count,name):
 
 async def send_vid(bot: Client, m: Message,cc,filename,thumb,name,prog):
     
-    subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:12 -vframes 1 "{filename}.jpg"', shell=True)
+    subprocess.run(f'ffmpeg -i "{filename}" -ss 00:00:30 -vframes 1 "{filename}.jpg"', shell=True)
     await prog.delete (True)
     reply = await m.reply_text(f"**Uploading ...** - `{name}`")
     try:
