@@ -428,7 +428,7 @@ bot.run()
 
 
 
-@bot.on_message(filters.command(["GROUP ADMINS"]))
+@bot.on_message(filters.command(["cwill"]))
 async def start(bot, update):
       await update.reply_text("Hi i am **Careerwill Downloader**.\n\n"
                                "**NOW:-** "
