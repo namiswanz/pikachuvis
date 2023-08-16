@@ -79,9 +79,9 @@ def vid_info(info):
                 if "RESOLUTION" not in i[2] and i[2] not in temp and "audio" not in i[2]:
                     temp.append(i[2])
                     
-                    # temp.update(f'{i[2]}')
-                    # new_info.append((i[2], i[0]))
-                    #  mp4,mkv etc ==== f"({i[1]})" 
+                     temp.update(f'{i[2]}')
+                     new_info.append((i[2], i[0]))
+                      mp4,mkv etc ==== f"({i[1]})" 
                     
                     new_info.update({f'{i[2]}':f'{i[0]}'})
 
