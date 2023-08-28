@@ -343,7 +343,7 @@ async def account_login(bot: Client, m: Message):
             elif "player.vimeo" in url:
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
             elif "m3u8" or "livestream" in url:
-                cmd = f'yt-dlp -f "{ytf}" --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
+                cmd = f'yt-dlp -f "b[height<={raw_text2}]/bv[height<={raw_text2}]+ba" --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
             elif ytf == "0" or "unknown" in out:
                 cmd = f'yt-dlp -f "{ytf}" --no-keep-video --remux-video mkv "{url}" -o "{name}.%(ext)s"'
             elif ".pdf" in url:
