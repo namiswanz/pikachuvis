@@ -157,31 +157,15 @@ async def account_login(bot: Client, m: Message):
         for i in range(arg, len(links)):
 
             url = links[i][1]
-            name1 = links[i][0].replace("\t", "").replace(":", "").replace("/","").replace("+", "").replace("#", "").replace("|", "").replace("@", "").replace("*","").replace("download",".pdf").replace(".","").strip()
-            if ".pdf" in url or "pdf" in name1:
-                name = f"{str(count).zfill(3)}) {name1.replace('pdf', '')}.pdf"
-                r = requests.get(url, allow_redirects=True)
-                if r.status_code != 200:
-                    print("Error", name)
-                    continue
-                with open(name, "wb") as f:
-                    f.write(r.content)
-                    print("done: ", name)
-                try:
-                    await bot.send_document(m.chat.id, name, file_name=name, caption=f'{name}')
-                except FloodWait as e:
-                    await asyncio.sleep(e.x)
-                count += 1
-                os.remove(name) if os.path.exists(name) else None
-                continue
-                
-            if "classplus" in url:
-                ytf = None
-                name = name1
-                
             if "visionias" in url:
-                url = get_va(url)
-                name = name1
+                async with ClientSession() as session:
+                    async with session.get(url, headers=headers) as resp:
+                        text = await resp.text()
+                        url = re.search(
+                            visionias_url_extract_pattern, text).group(1)
+
+            name1 = links[i][0].replace("\t", "").replace(":", "").replace("/", "").replace("+", "").replace(
+                "#", "").replace("|", "").replace("@", "").replace("*", "").replace(".", "").strip()
 
             if raw_text2 == "144":
 
@@ -262,8 +246,6 @@ async def account_login(bot: Client, m: Message):
                     ytf = out['852x480']
                 elif '854x470' in out:
                     ytf = out['852x470']
-                elif '1280x720' in out:
-                    ytf = out['1280x720']
                 elif 'unknown' in out:
                     ytf = out["unknown"]
                 else:
@@ -349,8 +331,10 @@ async def account_login(bot: Client, m: Message):
                     res = list(out.keys())[list(out.values()).index(ytf)]
 
                 name = f'{str(count).zfill(3)}) {name1} {res}'
+                print(name)
             except Exception:
                 res = "NA"
+                print("Not Allowed")
 
             # if "youtu" in url:
             # if ytf == f"'bestvideo[height<={raw_text2}][ext=mp4]+bestaudio[ext=m4a]'" or "acecwply" in url:
