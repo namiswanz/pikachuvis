@@ -380,18 +380,18 @@ async def account_login(bot: Client, m: Message):
 #                         continue
                 if cmd == "pdf" or ".pdf" in url:
                     try:
-                        ka = await helper.aio(url, name)
+                        k = await helper.aio(url, name)
                         await prog.delete(True)
                         time.sleep(1)
                         reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From GROUP ADMINS.**")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(ka, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected GROUP ADMINS❤️')
+                        await m.reply_document(k, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**Respected GROUP ADMINS❤️')
                         count += 1
                         # time.sleep(1)
                         await reply.delete(True)
                         time.sleep(1)
-                        os.remove(ka)
+                        os.remove(k)
                         time.sleep(3)
                     except FloodWait as e:
                         await m.reply_text(str(e))
