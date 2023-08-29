@@ -318,10 +318,10 @@ async def account_login(bot: Client, m: Message):
 
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**With Respect From Group Admins.**"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**With ❤️ From SALAZAR.**"
                 prog = await m.reply_text(Show)
-                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected Group Admins❤️**'
-                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected Group Admins❤️**'
+                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
+                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
 #                 if cmd == "pdf" or "drive" in url:
 #                     try:
 #                         ka=await helper.download(url,name)
@@ -469,7 +469,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'    
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected Group Admins❤️**'
+            cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
             
             cmd = f'yt-dlp -o "{name}.mp4" --cookies {cook} "{url}"'
             try:
@@ -662,7 +662,7 @@ async def account_login(bot: Client, m: Message):
             name = f'{str(count).zfill(3)}) {name1}'    
             Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url1}`"
             prog = await m.reply_text(Show)
-            cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By: Respected Group Admins❤️**'
+            cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
             if "pdf" in url:
                 cmd = f'yt-dlp -o "{name}.pdf" "{url1}"'
             else:
