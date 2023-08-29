@@ -49,7 +49,7 @@ sudo_groups = [ int(chat) for chat in os.environ.get("GROUPS").split(",")  if ch
 @bot.on_message(filters.command(["start"])&  (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
     
-    editable = await m.reply_text("Hi\nPress /txt")
+    editable = await m.reply_text("Hi\nPress /pika")
 
 @bot.on_message(filters.command(["cancel"])&  (filters.chat(sudo_groups)))
 async def cancel(_, m):
@@ -63,7 +63,7 @@ async def restart_handler(_, m):
     await m.reply_text("Restarted!", True)
     os.execl(sys.executable, sys.executable, *sys.argv)
 
-@bot.on_message(filters.command(["txt"])&   (filters.chat(sudo_groups)))
+@bot.on_message(filters.command(["pika"])&   (filters.chat(sudo_groups)))
 async def account_login(bot: Client, m: Message):
     
     editable = await m.reply_text("Send your txt file.**")
@@ -318,7 +318,7 @@ async def account_login(bot: Client, m: Message):
 
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**With Respect❤️ From SALAZAR.**"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-** `{url}`\n\n**With ❤️ From SALAZAR.**"
                 prog = await m.reply_text(Show)
                 cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
                 cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
@@ -467,7 +467,7 @@ async def account_login(bot: Client, m: Message):
                 cook = "cookie.txt"
                 
             name = f'{str(count).zfill(3)}) {name1}'    
-            Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`\n\n**With Respect❤️ From ARMANDO SALAZAR.**"
+            Show = f"**Downloading:-**\n\n**Name :-** `{name}`\n\n**Url :-** `{url}`\n\n**rout** :- `{rout}`\n\n**With ❤️ From SALAZAR.**"
             prog = await m.reply_text(Show)
             cc = f'{str(count).zfill(3)}.  {name1} {res}.mp4\n\n**Batch:** {raw_text0}\n\n**Downloaded By: SALAZAR❤️**'
             
