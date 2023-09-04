@@ -355,17 +355,17 @@ async def account_login(bot: Client, m: Message):
                 cmd = f'yt-dlp -f "{ytf}+bestaudio" --hls-prefer-ffmpeg --no-keep-video --remux-video mp4 "{url}" -o "{name}.%(ext)s"'
 
             try:
-                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ From SALAZAR**"
+                Show = f"**Downloading:-**\n\n**Name :-** `{name}\nQuality - {raw_text2}`\n\n**Url :-**\n`{url}`\n\n**With ❤️ REXODAS RANDI PUTRA**"
                 prog = await m.reply_text(Show)
-                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:** SALAZAR❤️'
-                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**SALAZAR❤️'
+                cc = f'{str(count).zfill(3)}.  {name1} {res}.mkv\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**❤️ REXODAS RANDI PUTRA'
+                cc1 = f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**❤️ REXODAS RANDI PUTRA'
 #                 if cmd == "pdf" or "drive" in url:
 #                     try:
 #                         ka=await helper.download(url,name)
 #                         await prog.delete (True)
 #                         time.sleep(1)
 #                         # await helper.send_doc(bot,m,cc,ka,cc1,prog,count,name)
-#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ From GROUP ADMINS.**")
+#                         reply = await m.reply_text(f"Uploading - `{name}`\n\n**With ❤️ REXODAS RANDI PUTRA.**")
 #                         time.sleep(1)
 #                         start_time = time.time()
 #                         await m.reply_document(ka,caption=cc1)
@@ -383,10 +383,10 @@ async def account_login(bot: Client, m: Message):
                         k = await helper.aio(url, name)
                         await prog.delete(True)
                         time.sleep(1)
-                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ From SALAZAR.**")
+                        reply = await m.reply_text(f"Uploading - ```{name}```\n\n**With ❤️ REXODAS RANDI PUTRA.**")
                         time.sleep(1)
                         start_time = time.time()
-                        await m.reply_document(k, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**SALAZAR❤️')
+                        await m.reply_document(k, caption=f'{str(count).zfill(3)}. {name1} {res}.pdf\n\n**Batch:** {raw_text0}\n\n**Downloaded By:**❤️ REXODAS RANDI PUTRA')
                         count += 1
                         # time.sleep(1)
                         await reply.delete(True)
@@ -405,7 +405,7 @@ async def account_login(bot: Client, m: Message):
                     time.sleep(1)
 
             except Exception as e:
-                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ From SALAZAR**")
+                await m.reply_text(f"**downloading failed **\n{str(e)}\n**Name** - {name}\n**Link** - `{url}`\n\n**With ❤️ REXODAS RANDI PUTRA**")
                 continue
 
     except Exception as e:
